@@ -1,5 +1,4 @@
-//import ClassCounter from "./components/classCounter";
-//import Counter from "./components/counter";
+import Counter from "./components/counter";
 import './style/App.css'
 import { inicialtodos } from './components/SongsList';
 import TodoList from './components/TodoList';
@@ -23,14 +22,14 @@ function App() {
   const deleteTodo = (id) => {
      setTodos(todos.filter(todo => todo.id !== id))
   }
+
+  let counter = todos.length;
   
-   return (
+  return (
     <div className="App">
-     {/* <Counter/>,
-      <ClassCounter/> */}
-      <AddnewTodo addTodo={addTodo} generatorId={generatorId}/>
+    <Counter counter={counter}/>
+    <AddnewTodo addTodo={addTodo} generatorId={generatorId}/>
     <TodoList todos={todos} deleteTodo={deleteTodo}/>
-    
     </div>
   );
 };
