@@ -24,18 +24,20 @@ function AddnewTodo ({ addTodo, generatorId }){
     return (
         <form>
         <input 
+          className='enterAddSongs'
           type="text" 
           value={todo.name}
           placeholder="name"
           onChange={event => setTodo({...todo, name: event.target.value})}
         />
         <input 
+          className='enterAddSongs'
           type="text" 
           value={todo.releaseDate} 
           placeholder=" Set dedline"
           onChange={event => setTodo({...todo, releaseDate: event.target.value})}
           />
-        <ToDoButton type="submit" onClick ={addNewTodos}>Create To Do</ToDoButton>
+        <ToDoButton type="submit" onClick ={addNewTodos}>Add New Song</ToDoButton>
       </form>
     );
 }

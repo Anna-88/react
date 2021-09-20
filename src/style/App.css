@@ -7,5 +7,24 @@
     color: darkorchid;
 }
 
+.button_like{
+    padding: 5px 10px;
+    background-color: mistyrose;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    color:darkorchid;
+}
+
+.numberOfsongs{
+    color: darkorchid;
+}
+
+.enterAddSongs{
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+}
+
 
 

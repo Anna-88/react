@@ -1,22 +1,8 @@
-import { useState } from "react";
+function Counter ({counter}){
 
-
-function Counter (){
-    const [like, setLike] = useState(0);
-
-    function increment(){
-        setLike(like + 1);
-    };
-
-    function dicrement(){
-        setLike(like - 1);
-    };
-
-    return (
+  return (
       <div>
-          <h1>Counter Songs: {like} </h1>
-          <button onClick= {increment}>increment</button>;
-        <button onClick= {dicrement}>dicrement</button>
+          <h1 className='numberOfsongs'>Counter Songs: {counter}</h1>
       </div>
 
     );
